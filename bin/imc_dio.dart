@@ -28,7 +28,7 @@ void main(List<String> arguments) {
   }
 
   double imc = calculaImc(pessoa.getAltura(), pessoa.getPeso());
-  pessoa.setImc(imc.toStringAsPrecision(3));
+  pessoa.setImc(imc.toStringAsFixed(3));
 
   switch (imc) {
     case < 16:
